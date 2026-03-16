@@ -1,0 +1,18 @@
+/* CSS Variables for Cafe y Pilates */
+:root {
+  --primary-color: #8b7869;
+  --primary-light: #a69588;
+  --primary-dark: #6e5e52;
+  --primary-gradient: linear-gradient(135deg, #8b7869 0%, #a69588 100%);
+  --secondary-color: #f7f5f2;
+  --text-main: #333333;
+  --text-light: #ffffff;
+  --spacing-unit: 1rem;
+  --transition-speed: 0.3s;
+  
+  /* Bootstrap overrides for typography */
+  --bs-body-font-family: 'Cormorant Garamond', serif;
+  --bs-heading-font-family: 'Cormorant Garamond', serif;
+  --bs-body-line-height: var(--bs-body-font-family);
+  --bs-btn-font-family: 'Cormorant Garamond', serif;
+}

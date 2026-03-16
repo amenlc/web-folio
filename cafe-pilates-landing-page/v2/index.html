@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Café &amp; Pilates - Reformer Studio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Lato:wght@300;400;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <style type="text/tailwindcss">
+        :root {
+            --primary-color: #8b7869;
+            --primary-light: #a69282;
+            --primary-dark: #6e5e51;
+            --cream: #f9f7f5;
+        }
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #4a4a4a;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-8 py-3 rounded-full uppercase tracking-wider text-sm font-semibold transition-all duration-300 hover:bg-[var(--primary-dark)] hover:shadow-lg hover:-translate-y-1;
+        }
+        .nav-link {
+            @apply text-white/90 hover:text-white uppercase tracking-widest text-xs font-bold transition-colors duration-300 relative py-2;
+        }
+        .nav-link::after {
+            content: '';
+            @apply absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300;
+        }
+        .nav-link:hover::after {
+            @apply w-full;
+        }
+        .card-hover {
+            @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
+        }
+        .text-primary {
+            color: var(--primary-color);
+        }
+        .bg-primary {
+            background-color: var(--primary-color);
+        }
+    </style>
+</head>
+
+<body class="bg-[var(--cream)] antialiased">
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-[var(--primary-color)] shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img alt="Café &amp; Pilates Logo"
+                        class="h-20 w-20 rounded-full bg-[var(--primary-color)] p-0.5 shadow-sm"
+                        src="assets/logo-dark-for-bg.png" />
+                    <span class="text-white font-serif text-xl tracking-wide hidden sm:block">Café &amp; Pilates</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a class="nav-link" href="#about">Quiénes Somos</a>
+                        <a class="nav-link" href="#locations">Nuestras Sedes</a>
+                        <a class="nav-link" href="#contact">Contáctanos</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white hover:text-gray-200 focus:outline-none" type="button">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img alt="Pilates Studio Background" class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM9_7K2s6WvmAIDyfR6mmE46WvS3FVmCa_xyw3pNjUcRqF15HcPho_nywOGmwx6tXC2O5dOJw7myIdkItWLFqxM3_UvYXUa-tZW4CPCFD4A3yfrZJhE6OIYEQe7dz4MsF9eYExNz0gLKpGjEaBn8HXdmtOd94h9ATeLdH9vx2Ber5_Ygyp8mdqTOBC5ixhHqW_Xb3Pz_cvz2dJZu_wRmgHj95FYWjuCCoCgjdnsmMC1r8oLqjK0LpWBS2PHjx-CpZuAROO7cUJJWom" />
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-black/50 via-[var(--primary-dark)]/40 to-[var(--primary-color)]/80 mix-blend-multiply">
+            </div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <div class="mt-8 mb-8 transform hover:scale-105 transition-transform duration-700">
+                <img alt="Café &amp; Pilates Logo" class="w-48 h-48 md:w-64 md:h-64 mx-auto drop-shadow-2xl"
+                    src="assets/logo-dark-for-bg.png" />
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg leading-tight">
+                Equilibrio, Cuerpo y <br /><span class="italic font-light">Buen Café</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-white/90 mb-10 font-light max-w-2xl mx-auto">
+                Tu espacio exclusivo de Pilates Reformer donde el bienestar físico se encuentra con el aroma del mejor
+                café.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a class="btn-primary border-2 border-[var(--primary-color)]" href="#locations">
+                    Reserva tu clase
+                </a>
+                <a class="px-8 py-3 rounded-full uppercase tracking-wider text-sm font-semibold transition-all duration-300 text-white border-2 border-white hover:bg-white hover:text-[var(--primary-color)]"
+                    href="#about">
+                    Conócenos
+                </a>
+            </div>
+        </div>
+        <a class="absolute bottom-10 left-1/2 -translate-x-1/2 text-white animate-bounce cursor-pointer" href="#about">
+            <span class="material-symbols-outlined text-4xl">expand_more</span>
+        </a>
+    </header>
+    <section class="py-20 md:py-32 bg-white relative" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="w-full md:w-1/2 relative group">
+                    <div
+                        class="absolute inset-0 bg-[var(--primary-color)] rounded-lg transform translate-x-3 translate-y-3 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform">
+                    </div>
+                    <img alt="Pilates Stretching"
+                        class="relative rounded-lg shadow-xl w-full h-[500px] object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsH73fwCDjqVfjpSxt5gosWwybMz4c8DxUhxq0t7WKgVh-fjxo6uDBnK-ifIS1IbQi_XBOKGbNj8LVd8twU-A0_nQY621HQ9XGKzaIdzt67Z9HS5xm_CSYgwaQaejzLmT2VRfGTARZ2cOZrxNLoKDpikbhAwThXpxKiTGe_YKwANgUp7_urDGXNbghDT38M__f8TrLT2F41EExzsLCnF-TvqhC_QzsyOhYEmac2atGCje6zb8LBBuoIxFY55bv3tg-EftoHrxqhDle" />
+                </div>
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <span
+                        class="text-[var(--primary-color)] uppercase tracking-widest text-sm font-bold mb-2 block">Nuestra
+                        Filosofía</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Más que un estudio, <br /><span
+                            class="italic text-[var(--primary-color)]">un estilo de vida</span></h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        En <strong class="text-[var(--primary-color)]">Café &amp; Pilates</strong>, creemos en la
+                        armonía perfecta entre el movimiento consciente y los pequeños placeres de la vida. Nuestro
+                        método combina la precisión técnica del Pilates Reformer con un ambiente cálido y acogedor.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Somos un refugio urbano diseñado para fortalecer tu cuerpo, calmar tu mente y deleitar tus
+                        sentidos con nuestra selección de café de especialidad post-entrenamiento.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8 mt-8 border-t border-gray-100 pt-8">
+                        <div class="text-center">
+                            <span
+                                class="material-symbols-outlined text-4xl text-[var(--primary-color)] mb-2">self_improvement</span>
+                            <h4 class="font-serif font-bold text-gray-800">Bienestar Integral</h4>
+                        </div>
+                        <div class="text-center">
+                            <span
+                                class="material-symbols-outlined text-4xl text-[var(--primary-color)] mb-2">coffee</span>
+                            <h4 class="font-serif font-bold text-gray-800">Café Premium</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-[var(--cream)]" id="locations">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-[var(--primary-color)] uppercase tracking-widest text-sm font-bold mb-2 block">Donde
+                    encontrarnos</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800">Nuestras Sedes</h2>
+                <div class="w-24 h-1 bg-[var(--primary-color)] mx-auto mt-6"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover flex flex-col h-full group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img alt="Sede Egaña Pilates Reformer"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7d1DIjHXeeqpxIz8NbDxe3wvHIE2p-1b8DrwNzomH1vu48GWuob_ZBZQiOhj0pvapVzMUGhJclRjiKnowb__xkkZkD3oIPnUp630OoFy5RrbP0MJW3Gj6-y8X__JKxGrV3rM4n2Vb0jDlpDSV9OrTMmn4o8mYf4upvuG4DfSZ0LUhLPTPLXMaXITilt7rN9FYRKxLcrOHmBQHGnTPHG1FB8VLPJeULbh6Y6X6m97TwPTK6IJvZmzCZTcrxEm3LW8TbYl-hPTg19_j" />
+                        <div
+                            class="absolute bottom-0 left-0 bg-[var(--primary-color)] text-white px-6 py-2 text-sm uppercase tracking-wide">
+                            Egaña
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 font-serif">Estudio Egaña</h3>
+                            <div class="flex items-start gap-3 mb-6 text-gray-600">
+                                <span
+                                    class="material-symbols-outlined text-[var(--primary-color)] mt-1">location_on</span>
+                                <p class="text-lg">Herberto Covarrubias 21<br />Ñuñoa, Santiago</p>
+                            </div>
+                            <p class="text-gray-500 mb-6 font-light italic">
+                                "Un espacio luminoso y moderno equipado con las últimas máquinas Reformer para tu
+                                práctica diaria."
+                            </p>
+                        </div>
+                        <a class="block w-full text-center py-3 border border-[var(--primary-color)] text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white transition-colors duration-300 rounded font-semibold uppercase text-sm tracking-wider"
+                            href="https://wa.me/56933419907" target="_blank">
+                            Reservar en Egaña
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover flex flex-col h-full group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img alt="Sede Infante Pilates Reformer"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuD22HeLjxqjpWfT3R2p6X98f7qo9HoEuVWqYpSg48zjC7gFGmNMbz18yAF3BVCSmNevao3wFBdNJY3u5BYwhMVioF38cmpQvyTOiwGjWBYrYp2v67-MBF-Z2MYuFuHnN2raQMz90oKGXTWY9Iz5FRzn3Y8RVBJye4HJrbLFLL65UWZyG8LUPWnf4KdM96fQqCMIAPEkWcglxl2TEHasShaILJHRf9UfAJ4PIoTYdank7FVP7Z8hkV6BC41xOxSskLHuzKMojvfCnQ2r" />
+                        <div
+                            class="absolute bottom-0 left-0 bg-[var(--primary-dark)] text-white px-6 py-2 text-sm uppercase tracking-wide">
+                            Infante
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4 font-serif">Estudio Infante</h3>
+                            <div class="flex items-start gap-3 mb-6 text-gray-600">
+                                <span
+                                    class="material-symbols-outlined text-[var(--primary-color)] mt-1">location_on</span>
+                                <p class="text-lg italic text-gray-400">Dirección Próximamente<br />Providencia,
+                                    Santiago</p>
+                            </div>
+                            <p class="text-gray-500 mb-6 font-light italic">
+                                "Nuestra nueva sede boutique, diseñada para ofrecerte una experiencia íntima y
+                                personalizada."
+                            </p>
+                        </div>
+                        <button
+                            class="block w-full text-center py-3 border border-gray-300 text-gray-400 bg-gray-50 rounded font-semibold uppercase text-sm tracking-wider cursor-not-allowed"
+                            disabled="">
+                            Próximamente
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-[var(--primary-color)] text-white relative overflow-hidden" id="contact">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl font-bold mb-8 font-serif">Conecta con Nosotros</h2>
+            <p class="text-xl mb-12 text-white/90 font-light">¿Tienes dudas o quieres agendar una clase de prueba?
+                Escríbenos.</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
+                <a class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-1"
+                    href="https://wa.me/56933419907" target="_blank">
+                    <div
+                        class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-[#25D366] transition-colors duration-300">
+                        <i class="fab fa-whatsapp text-3xl text-white"></i>
+                    </div>
+                    <span class="text-sm font-bold tracking-wider uppercase opacity-80 group-hover:opacity-100">+56 9
+                        3341 9907</span>
+                </a>
+                <a class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-1"
+                    href="https://www.instagram.com/cafeypilates/" target="_blank">
+                    <div
+                        class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-gradient-to-tr group-hover:from-[#f09433] group-hover:via-[#dc2743] group-hover:to-[#bc1888] transition-all duration-300">
+                        <i class="fab fa-instagram text-3xl text-white"></i>
+                    </div>
+                    <span
+                        class="text-sm font-bold tracking-wider uppercase opacity-80 group-hover:opacity-100">@cafeypilates</span>
+                </a>
+                <a class="group flex flex-col items-center gap-3 transition-transform hover:-translate-y-1"
+                    href="https://www.facebook.com/cafeypilates" target="_blank">
+                    <div
+                        class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center group-hover:bg-[#1877F2] transition-colors duration-300">
+                        <i class="fab fa-facebook-f text-3xl text-white"></i>
+                    </div>
+                    <span class="text-sm font-bold tracking-wider uppercase opacity-80 group-hover:opacity-100">Café
+                        &amp; Pilates</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#4a403a] text-white/60 py-8 text-center text-xs">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2023 Café &amp; Pilates. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

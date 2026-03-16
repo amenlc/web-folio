@@ -1,0 +1,305 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+.nav-link,
+.btn,
+.btn-primary-custom {
+  font-family: 'Cormorant Garamond', serif !important;
+}
+
+body {
+  color: var(--text-main);
+  background-color: var(--secondary-color);
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: rgba(247, 245, 242, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-custom .nav-link {
+  color: var(--text-main);
+  font-weight: 500;
+  transition: color var(--transition-speed) ease;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link:focus {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('../assets/img/hero-pilates.png') center/cover no-repeat;
+  color: var(--text-light);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(139, 120, 105, 0.5);
+  /* Primary color overlay */
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-logo {
+  max-width: 300px;
+  margin-bottom: 2rem;
+  animation: fadeInDown 1s ease;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary-custom {
+  background: var(--primary-gradient);
+  border: none;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  font-weight: 600;
+}
+
+.btn-primary-custom:hover,
+.btn-primary-custom:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(139, 120, 105, 0.4);
+  color: #fff;
+}
+
+/* Base Sections */
+section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+/* Quienes Somos */
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-main);
+}
+
+/* Sedes (Features Grid) */
+.features {
+  background-color: #fff;
+}
+
+.feature-card {
+  background: var(--secondary-color);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(139, 120, 105, 0.15);
+}
+
+.feature-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.feature-card-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.feature-card-content h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.feature-card-content p {
+  color: var(--text-main);
+  margin-bottom: 0;
+}
+
+.feature-card-content i {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Planes */
+.plan-card {
+  background: #fff;
+  border: 1px solid var(--primary-light);
+  border-radius: 15px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all var(--transition-speed) ease;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-card:hover {
+  transform: scale(1.05);
+  border-color: var(--primary-color);
+  box-shadow: 0 20px 40px rgba(139, 120, 105, 0.1);
+}
+
+.plan-card .badge-top {
+  position: absolute;
+  top: 15px;
+  right: -35px;
+  background: var(--primary-color);
+  color: white;
+  padding: 5px 40px;
+  transform: rotate(45deg);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.plan-card h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.plan-card .duration {
+  color: var(--primary-light);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.plan-price {
+  margin-bottom: 2rem;
+}
+
+.plan-price .old-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 1rem;
+  display: block;
+}
+
+.plan-price .new-price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Contáctanos / CTA Final */
+.cta-final {
+  background: var(--primary-gradient);
+  color: #fff;
+  text-align: center;
+}
+
+.cta-final h2 {
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1.8rem;
+  transition: all var(--transition-speed) ease;
+  text-decoration: none;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #fff;
+  color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-dark);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
