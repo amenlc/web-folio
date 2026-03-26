@@ -46,7 +46,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('../assets/img/hero-pilates.png') center/cover no-repeat;
+  background: url('../assets/img/bg-image.jpeg') center/cover no-repeat;
   color: var(--text-light);
 }
 
