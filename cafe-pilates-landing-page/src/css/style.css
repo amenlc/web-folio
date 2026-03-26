@@ -70,8 +70,8 @@ body {
 }
 
 .hero-logo {
-  max-width: 300px;
-  margin-bottom: 2rem;
+  max-width: 280px;
+  margin-bottom: 1rem;
   animation: fadeInDown 1s ease;
 }
 
