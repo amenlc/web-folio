@@ -46,7 +46,11 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url('../assets/img/bg-image.jpeg') center/cover no-repeat;
+  background-color: transparent;
+  background-image: url('../assets/img/bg-image.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--text-light);
 }
 
