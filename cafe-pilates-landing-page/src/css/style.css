@@ -183,6 +183,22 @@ section {
   margin-bottom: 2.5rem;
 }
 
+.transferencia-label {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary-color);
+  letter-spacing: 0.04em;
+  border: 1.5px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 0.4rem 1.1rem;
+  opacity: 0.85;
+}
+
 .sede-select-card {
   background: var(--secondary-color);
   border-radius: 15px;
