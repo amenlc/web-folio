@@ -117,53 +117,135 @@
     <section id="planes" class="fade-in-section">
         <div class="container">
             <h2 class="section-title">Nuestros Planes</h2>
+            <p class="text-center planes-intro">Selecciona tu sede para ver los planes disponibles</p>
             <div class="row g-4 justify-content-center">
-                <!-- Plan 4 Clases -->
+                <!-- Sede Egaña -->
+                <div class="col-md-5">
+                    <div class="sede-select-card" role="button" data-sede="egana" tabindex="0"
+                        aria-label="Ver planes Sede Egaña">
+                        <div class="sede-select-content">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3>Sede Egaña</h3>
+                            <p>Herberto Covarrubias 21, Ñuñoa</p>
+                            <span class="btn btn-primary-custom mt-2">Ver Planes </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sede Infante -->
+                <div class="col-md-5">
+                    <div class="sede-select-card" role="button" data-sede="infante" tabindex="0"
+                        aria-label="Ver planes Sede Infante">
+                        <div class="sede-select-content">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3>Sede Infante</h3>
+                            <p>Jose Manuel Infante 1987, Providencia</p>
+                            <span class="btn btn-primary-custom mt-2">Ver Planes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overlay Planes Sede Infante -->
+    <div id="overlay-infante" class="planes-overlay" aria-hidden="true">
+        <div class="container planes-overlay-inner">
+            <button class="btn-volver" data-close-overlay aria-label="Volver">
+                <i class="fa-solid fa-arrow-left me-2"></i>Volver
+            </button>
+            <h2 class="section-title">Sede Infante</h2>
+            <p class="text-center planes-intro mb-4">Jose Manuel Infante 1987, Providencia</p>
+            <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
                     <div class="plan-card">
                         <h3>4 Clases</h3>
                         <p class="duration">Mensual (31 días) - 4 Clases por mes</p>
                         <div class="plan-price">
-                            <span class="old-price">$44.990</span>
                             <span class="new-price">$39.990</span>
                         </div>
-                        <a href="https://wa.me/56933419907?text=Hola,%20quisiera%20inscribirme%20en%20el%20plan%20de%204%20clases"
+                        <a href="https://wa.me/56933419907?text=Hola,%20quisiera%20inscribirme%20en%20el%20plan%20de%204%20clases%20en%20Sede%20Infante"
                             class="btn btn-primary-custom w-100" target="_blank"><i
                                 class="fa-brands fa-whatsapp me-2"></i>Elegir Plan</a>
                     </div>
                 </div>
-                <!-- Plan 8 Clases -->
                 <div class="col-md-4">
                     <div class="plan-card">
                         <div class="badge-top">Popular</div>
                         <h3>8 Clases</h3>
                         <p class="duration">Mensual (31 días) - 8 Clases por mes</p>
                         <div class="plan-price">
-                            <span class="old-price">$74.990</span>
-                            <span class="new-price">$69.990</span>
+                            <span class="new-price">$65.990</span>
                         </div>
-                        <a href="https://wa.me/56933419907?text=Hola,%20quisiera%20inscribirme%20en%20el%20plan%20de%208%20clases"
+                        <a href="https://wa.me/56933419907?text=Hola,%20quisiera%20inscribirme%20en%20el%20plan%20de%208%20clases%20en%20Sede%20Infante"
                             class="btn btn-primary-custom w-100" target="_blank"><i
                                 class="fa-brands fa-whatsapp me-2"></i>Elegir Plan</a>
                     </div>
                 </div>
-                <!-- Plan 12 Clases -->
                 <div class="col-md-4">
                     <div class="plan-card">
                         <h3>12 Clases</h3>
                         <p class="duration">Mensual (31 días) - 12 Clases por mes</p>
                         <div class="plan-price">
-                            <span class="old-price">$99.990</span>
-                            <span class="new-price">$94.990</span>
+                            <span class="new-price">$89.990</span>
                         </div>
-                        <a href="https://wa.me/56933419907?text=Hola,%20quisiera%20inscribirme%20en%20el%20plan%20de%2012%20clases"
+                        <a href="https://wa.me/56933419907?text=Hola,%20quisiera%20inscribirme%20en%20el%20plan%20de%2012%20clases%20en%20Sede%20Infante"
                             class="btn btn-primary-custom w-100" target="_blank"><i
                                 class="fa-brands fa-whatsapp me-2"></i>Elegir Plan</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- Overlay Planes Sede Egaña -->
+    <div id="overlay-egana" class="planes-overlay" aria-hidden="true">
+        <div class="container planes-overlay-inner">
+            <button class="btn-volver" data-close-overlay aria-label="Volver">
+                <i class="fa-solid fa-arrow-left me-2"></i>Volver
+            </button>
+            <h2 class="section-title">Sede Egaña</h2>
+            <p class="text-center planes-intro mb-4">Herberto Covarrubias 21, Ñuñoa</p>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="plan-card">
+                        <h3>4 Clases</h3>
+                        <p class="duration">Mensual (31 días) - 4 Clases por mes</p>
+                        <div class="plan-price">
+                            <span class="new-price">$42.990</span>
+                        </div>
+                        <a href="https://wa.me/56933419907?text=Hola,%20quisiera%20inscribirme%20en%20el%20plan%20de%204%20clases%20en%20Sede%20Ega%C3%B1a"
+                            class="btn btn-primary-custom w-100" target="_blank"><i
+                                class="fa-brands fa-whatsapp me-2"></i>Elegir Plan</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plan-card">
+                        <div class="badge-top">Popular</div>
+                        <h3>8 Clases</h3>
+                        <p class="duration">Mensual (31 días) - 8 Clases por mes</p>
+                        <div class="plan-price">
+                            <span class="new-price">$71.990</span>
+                        </div>
+                        <a href="https://wa.me/56933419907?text=Hola,%20quisiera%20inscribirme%20en%20el%20plan%20de%208%20clases%20en%20Sede%20Ega%C3%B1a"
+                            class="btn btn-primary-custom w-100" target="_blank"><i
+                                class="fa-brands fa-whatsapp me-2"></i>Elegir Plan</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plan-card">
+                        <h3>12 Clases</h3>
+                        <p class="duration">Mensual (31 días) - 12 Clases por mes</p>
+                        <div class="plan-price">
+                            <span class="new-price">$96.990</span>
+                        </div>
+                        <a href="https://wa.me/56933419907?text=Hola,%20quisiera%20inscribirme%20en%20el%20plan%20de%2012%20clases%20en%20Sede%20Ega%C3%B1a"
+                            class="btn btn-primary-custom w-100" target="_blank"><i
+                                class="fa-brands fa-whatsapp me-2"></i>Elegir Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Nuestras Sedes -->
     <section id="sedes" class="features">
