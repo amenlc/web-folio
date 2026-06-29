@@ -129,6 +129,29 @@ section {
   color: var(--text-main);
 }
 
+/* Preguntas Frecuentes (FAQ) */
+.faq-item {
+  border-bottom: 1px solid rgba(139, 120, 105, 0.2);
+  padding: 1.5rem 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.faq-item p {
+  color: var(--text-main);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
 /* Sedes (Features Grid) */
 .features {
   background-color: #fff;

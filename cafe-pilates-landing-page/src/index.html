@@ -12,15 +12,29 @@
     <meta name="keywords"
         content="pilates reformer, clases de pilates, pilates santiago, pilates providencia, pilates ñuñoa, estudio de pilates, bienestar, salud">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Café y Pilates">
+    <meta name="theme-color" content="#8b7869">
 
     <!-- Open Graph / Redes Sociales (Facebook, WhatsApp, etc) -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CL">
+    <meta property="og:site_name" content="Café y Pilates">
     <meta property="og:title" content="Café y Pilates | Estudio de Pilates Reformer">
     <meta property="og:description"
         content="Transforma tu cuerpo y mente con nuestras clases de Pilates Reformer en Ñuñoa y Providencia.">
     <!-- Reemplaza la URL por tu dominio real -->
     <meta property="og:url" content="https://www.cafeypilates.cl/">
-    <meta property="og:image" content="https://www.cafeypilates.cl/assets/img/logo-brown-bg.png">
+    <!-- TODO: subir una imagen real de portada 1200x630 a assets/img/og-cover.jpg -->
+    <meta property="og:image" content="https://www.cafeypilates.cl/assets/img/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Café y Pilates | Pilates Reformer en Santiago">
+    <meta name="twitter:description"
+        content="Clases de Pilates Reformer en Ñuñoa (Egaña) y Providencia (Infante). ¡Reserva tu clase hoy!">
+    <meta name="twitter:image" content="https://www.cafeypilates.cl/assets/img/og-cover.jpg">
 
     <link rel="icon" type="image/png" href="assets/img/logo-brown-bg.png">
     <!-- Define la URL canónica -->
@@ -41,7 +55,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/reset.css?v=1.1">
     <link rel="stylesheet" href="css/variables.css?v=1.1">
-    <link rel="stylesheet" href="css/style.css?v=1.11">
+    <link rel="stylesheet" href="css/style.css?v=1.12">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
@@ -50,7 +64,7 @@
     <!-- Navigation -->
     <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold d-flex align-items-center" href="#" style="color: var(--primary-color);">
+            <a class="navbar-brand fw-bold d-flex align-items-center" href="#inicio" style="color: var(--primary-color);">
                 Café y Pilates
                 <img src="assets/img/logo-for-light-bg.png" alt="Café y Pilates Logo" height="50" class="ms-2">
             </a>
@@ -71,6 +85,9 @@
                         <a class="nav-link" href="#sedes">Nuestras Sedes</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contáctanos</a>
                     </li>
                 </ul>
@@ -83,11 +100,12 @@
         <div class="container">
             <!-- Logon overlaying the hero image -->
             <img src="assets/img/logo-dark-for-bg.png" alt="Café y Pilates Logo" class="hero-logo"
+                width="400" height="150"
                 onerror="this.onerror=null; this.src='https://placehold.co/400x150/ffffff/8b7869?text=Cafe+y+Pilates';">
 
             <h1>Transforma tu cuerpo y mente</h1>
-            <p>Descubre el balance perfecto con nuestras clases llenas de disfrute</p>
-            <a href="#planes" class="btn btn-primary-custom mt-3">Ver Planes Mensuales</a>
+            <p>Descubre el balance perfecto con nuestras clases llenas de disfrute en Ñuñoa y Providencia</p>
+            <a href="#planes" class="btn btn-primary-custom mt-3">Ver Nuestros Planes</a>
         </div>
     </section>
 
@@ -257,7 +275,7 @@
                 <!-- Sede Egaña -->
                 <div class="col-md-6 col-lg-5">
                     <div class="feature-card">
-                        <img src="assets/img/sede-egana.jpeg" alt="Pilates Reformer Sede Egaña" loading="lazy">
+                        <img src="assets/img/sede-egana.jpeg" alt="Sala de Pilates Reformer en Sede Egaña, Ñuñoa" loading="lazy" width="600" height="400">
                         <div class="feature-card-content">
                             <i class="fa-solid fa-location-dot"></i>
                             <h3>Sede Egaña</h3>
@@ -278,7 +296,7 @@
                 <!-- Sede Infante -->
                 <div class="col-md-6 col-lg-5">
                     <div class="feature-card">
-                        <img src="assets/img/sede-infante.jpeg" alt="Pilates Reformer Sede Infante" loading="lazy">
+                        <img src="assets/img/sede-infante.jpeg" alt="Sala de Pilates Reformer en Sede Infante, Providencia" loading="lazy" width="600" height="400">
                         <div class="feature-card-content">
                             <i class="fa-solid fa-location-dot"></i>
                             <h3>Sede Infante</h3>
@@ -294,6 +312,44 @@
                                 style="font-size: 1.1rem;">Iniciar Sesion /
                                 Registrarse</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section id="faq" class="fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 faq-list">
+                    <div class="faq-item">
+                        <h3>¿Qué es el Pilates Reformer Fusión?</h3>
+                        <p>Es una práctica de Pilates sobre la máquina Reformer combinada con otras disciplinas
+                            para trabajar fuerza, movilidad, postura y conexión cuerpo-mente. Se adapta al ritmo
+                            y la condición de cada persona, sin exigencia, con foco en el disfrute, 
+                            respetando siempre los principios del Pilates, amamos a Joseph Pilates y su método.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Dónde están ubicadas las sedes?</h3>
+                        <p>Tenemos dos sedes en Santiago de Chile: Sede Egaña (Herberto Covarrubias 21, Ñuñoa)
+                            y Sede Infante (José Manuel Infante 1987, entre Ñuñoa y Providencia).</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Cuánto valen nuestras clases de Pilates?</h3>
+                        <p>Ofrecemos planes mensuales desde $39.990 (4 clases) hasta $96.990 (12 clases), según
+                            la sede. Los precios indicados son por transferencia.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Cómo reservo mi primera clase?</h3>
+                        <p>Puedes escribirnos por WhatsApp al <a href="https://wa.me/56933419907" target="_blank" rel="noopener">+56 9 3341 9907</a> o registrarte directamente en la
+                            plataforma de reservas de cada sede desde la sección <a href="#sedes">"Nuestras Sedes"</a>.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>¿Necesito experiencia previa para hacer Pilates Reformer?</h3>
+                        <p>No. Recibimos a personas de todos los niveles. Cada clase se acompaña de forma cercana
+                            y profesional para que avances a tu propio ritmo, seas principiante o avanzado.</p>
                     </div>
                 </div>
             </div>
@@ -334,39 +390,123 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="js/main.js?v=1.1"></script>
+    <script src="js/main.js?v=1.2"></script>
 
     <!-- Schema de Negocio Local -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "HealthAndBeautyBusiness",
+      "@type": "HealthClub",
+      "@id": "https://www.cafeypilates.cl/#organizacion",
       "name": "Café y Pilates",
       "image": "https://www.cafeypilates.cl/assets/img/logo-brown-bg.png",
+      "logo": "https://www.cafeypilates.cl/assets/img/logo-brown-bg.png",
       "url": "https://www.cafeypilates.cl/",
       "telephone": "+56933419907",
-      "description": "Estudio de Pilates Reformer con sedes en Egaña y Barrio Infante.",
+      "priceRange": "$$",
+      "currenciesAccepted": "CLP",
+      "description": "Estudio de Pilates Reformer Fusión con sedes en Ñuñoa (Egaña) y Providencia (Infante), Santiago de Chile.",
+      "sameAs": [
+        "https://www.instagram.com/cafeypilates/",
+        "https://www.facebook.com/cafeypilates"
+      ],
       "department": [
         {
-          "@type": "HealthAndBeautyBusiness",
-          "name": "Sede Egaña",
+          "@type": "HealthClub",
+          "name": "Café y Pilates - Sede Egaña",
+          "telephone": "+56933419907",
+          "url": "https://web.bewe.co/cafeypilatesegana/login",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Herberto Covarrubias 21",
             "addressLocality": "Ñuñoa",
             "addressRegion": "Región Metropolitana",
             "addressCountry": "CL"
-          }
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": "-33.4569", "longitude": "-70.5979" },
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "07:00",
+            "closes": "21:00"
+          }]
         },
         {
-          "@type": "HealthAndBeautyBusiness",
-          "name": "Sede Infante",
+          "@type": "HealthClub",
+          "name": "Café y Pilates - Sede Infante",
+          "telephone": "+56933419907",
+          "url": "https://web.bewe.co/cafeypilatesinfante/login",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Jose Manuel Infante 1987",
+            "streetAddress": "José Manuel Infante 1987",
             "addressLocality": "Providencia",
             "addressRegion": "Región Metropolitana",
             "addressCountry": "CL"
+          },
+          "geo": { "@type": "GeoCoordinates", "latitude": "-33.4372", "longitude": "-70.6178" },
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "07:00",
+            "closes": "21:00"
+          }]
+        }
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "name": "Plan 4 Clases - Sede Infante", "price": "39990", "priceCurrency": "CLP", "category": "Mensual" },
+        { "@type": "Offer", "name": "Plan 8 Clases - Sede Infante", "price": "65990", "priceCurrency": "CLP", "category": "Mensual" },
+        { "@type": "Offer", "name": "Plan 12 Clases - Sede Infante", "price": "89990", "priceCurrency": "CLP", "category": "Mensual" },
+        { "@type": "Offer", "name": "Plan 4 Clases - Sede Egaña", "price": "42990", "priceCurrency": "CLP", "category": "Mensual" },
+        { "@type": "Offer", "name": "Plan 8 Clases - Sede Egaña", "price": "71990", "priceCurrency": "CLP", "category": "Mensual" },
+        { "@type": "Offer", "name": "Plan 12 Clases - Sede Egaña", "price": "96990", "priceCurrency": "CLP", "category": "Mensual" }
+      ]
+    }
+    </script>
+
+    <!-- Schema de Preguntas Frecuentes (FAQ) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es el Pilates Reformer Fusión?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es una práctica de Pilates sobre la máquina Reformer combinada con otras disciplinas para trabajar fuerza, movilidad, postura y conexión cuerpo-mente, adaptándose al ritmo y la condición de cada persona."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde están ubicadas las sedes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tenemos dos sedes en Santiago de Chile: Sede Egaña (Herberto Covarrubias 21, Ñuñoa) y Sede Infante (José Manuel Infante 1987, Providencia)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuestan las clases de Pilates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ofrecemos planes mensuales desde $39.990 (4 clases) hasta $96.990 (12 clases), según la sede. Los precios indicados son por transferencia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo reservo mi primera clase?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puedes escribirnos por WhatsApp al +56 9 3341 9907 o registrarte directamente en la plataforma de reservas de cada sede."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Necesito experiencia previa para hacer Pilates Reformer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Recibimos a personas de todos los niveles y cada clase se acompaña de forma cercana y profesional para que avances a tu propio ritmo."
           }
         }
       ]

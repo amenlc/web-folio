@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
+            // Cerrar cualquier overlay de planes abierto al navegar por el menú
+            closeOverlay();
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 const headerOffset = 70;
