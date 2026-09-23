@@ -94,4 +94,31 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape') closeOverlay();
     });
+
+    // Banner de comprobante: el link de WhatsApp lleva el plan elegido.
+    // Se guarda en localStorage para que siga disponible si la página se recarga
+    // o si el usuario vuelve desde Webpay en la misma pestaña.
+    const setComprobanteLink = (banner, plan) => {
+        const text = `Hola! He comprado un plan de ${plan} en ${banner.dataset.sede}`;
+        banner.querySelector('a').href = 'https://wa.me/56933419907?text=' + encodeURIComponent(text);
+    };
+    const planKey = banner => 'planElegido:' + banner.dataset.sede;
+
+    document.querySelectorAll('.comprobante-banner').forEach(banner => {
+        try {
+            const plan = localStorage.getItem(planKey(banner));
+            if (plan) setComprobanteLink(banner, plan);
+        } catch (e) { /* storage no disponible */ }
+    });
+
+    document.querySelectorAll('.plan-card a.btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const overlay = btn.closest('.planes-overlay');
+            const banner = overlay && overlay.querySelector('.comprobante-banner');
+            if (!banner) return;
+            const plan = btn.closest('.plan-card').querySelector('h3').textContent.trim();
+            setComprobanteLink(banner, plan);
+            try { localStorage.setItem(planKey(banner), plan); } catch (e) { /* storage no disponible */ }
+        });
+    });
 });
